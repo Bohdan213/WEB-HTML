@@ -5,19 +5,19 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>Hello</title>
 </head>
 <body>
-    <img class="background-img" src="./icons/Mountains.svg" alt="Background" />
-    <header>
+<!--    <img class="background-img" src="./icons/Mountains.svg" alt="Background" />-->
+    <header class = "header">
         <h1 class = "main-header">Treloo</h1>
-        <nav>
+        <nav class = "header-menu">
             <a class = "header-link" href="#">Review</a>
             <a class = "header-link" href="#">Tips</a>
             <a class = "header-link" href="#">Alerts</a>
             <a class = "header-link" href="#">Blog</a>
-            <a class = "header-link" href="#">Login</a>
-            <button class = "blog-btn">Blog</button>
+            <button class = "header-btn">Blog</button>
         </nav>
     </header>
 
@@ -42,17 +42,17 @@
 
                 <form onSubmit = "{() => yourOnSubmitFunc()}">
                     <div class = "flight-place">
-                        <label for = "place-from">Living from</label>
-                        <input type = "text" class = "flight-place-input-place" id = "place-from">
-                        <label for = "place-to">Going to</label>
-                        <input type = "text" class = "flight-place-input-place" id = "place-to">
+                        <label for = "place-from" class = "place-from-label">Living from</label>
+                        <input type = "text" class = "flight-input-place" id = "place-from">
+                        <label for = "place-to" class = "place-to-label">Going to</label>
+                        <input type = "text" class = "flight-input-place" id = "place-to">
                     </div>
 
                     <div class = "flight-data">
                         <label for = "date-leave">Leave</label>
-                        <input type = "date" class = "flight-data-input-data" id = "date-leave">
+                        <input type = "date" class = "flight-input-data" id = "date-leave">
                         <label for = "date-return">Return</label>
-                        <input type = "date" class = "flight-data-input-data"  id = "date-return">
+                        <input type = "date" class = "flight-input-data"  id = "date-return">
                     </div>
                     <button class = "search-btn" onClick = "{() => yourOnSubmitFunc()}">Search</button>
                 </form>
@@ -74,31 +74,31 @@
             <div class="offer-container">
                 <article class = "offer">
                     <img class="offer-img" src="./icons/offer1.svg" alt="offer-image">
-                    <p class = "offer-type">Relax</p>
-                    <p class = "offer-duration">3 Days, 3 Nights</p>
-                    <p class = "offer-data">14 FEB 2022</p>
+                    <span class = "offer-type">Relax</span>
+                    <span class = "offer-duration">3 Days, 3 Nights</span>
+                    <span class = "offer-data">14 FEB 2022</span>
                     <h4>Logo Sea</h4>
-                    <p class = "offer-price">700$/Person</p>
+                    <span class = "offer-price">700$/Person</span>
                     <button class = "offer-btn-book">Book Now</button>
                 </article>
 
                 <article class = "offer">
                     <img class="offer-img" src="./icons/offer2.svg" alt="offer-image">
-                    <p class = "offer-type">Adventure</p>
-                    <p class = "offer-duration">4 Days, 3 Nights</p>
-                    <p class = "offer-data">18 JUN 2022</p>
+                    <span class = "offer-type">Adventure</span>
+                    <span class = "offer-duration">4 Days, 3 Nights</span>
+                    <span class = "offer-data">18 JUN 2022</span>
                     <h4>Ansgar Scheffold</h4>
-                    <p class = "offer-price">400$/Person</p>
+                    <span class = "offer-price">400$/Person</span>
                     <button class = "offers-btn-book">Book Now</button>
                 </article>
 
                 <article class = "offer">
                     <img class="offer-img" src="./icons/offer3.svg" alt="offer-image">
-                    <p class = "offer-type">Relax</p>
-                    <p class = "offer-duration">7 Days, 6 Nights</p>
-                    <p class = "offer-data">22 DEC 2022</p>
+                    <span class = "offer-type">Relax</span>
+                    <span class = "offer-duration">7 Days, 6 Nights</span>
+                    <span class = "offer-data">22 DEC 2022</span>
                     <h4>Lana X</h4>
-                    <p class = "offer-price">340$/Person</p>
+                    <span class = "offer-price">340$/Person</span>
                     <button class = "offer-btn-book">Book Now</button>
                 </article>
             </div>
@@ -110,18 +110,18 @@
             <p class = "advertisement-text">Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you explore nature paradise in the world, let’s find the best destination in world with us. Would you explore nature paradise in the world, let’s find the best destination in world with us.
                 Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
             <div class = "advertisement-field">
-                <p class = "advertisement-field-upper-text">300+</p>
-                <p class = "advertisement-field-down-text">DESTINATIONS</p>
+                <span class = "advertisement-up-text">300+</span>
+                <span class = "advertisement-dwn-text">DESTINATIONS</span>
             </div>
 
             <div class = "advertisement-field">
-                <p class = "advertisement-field-upper-text">5000+</p>
-                <p class = "advertisement-field-down-text">TOURISTS</p>
+                <span class = "advertisement-up-text">5000+</span>
+                <span class = "advertisement-dwn-text">TOURISTS</span>
             </div>
 
             <div class = "advertisement-field">
-                <p class = "advertisement-field-upper-text">150+</p>
-                <p class = "advertisement-field-down-text">HOTELS</p>
+                <span class = "advertisement-up-text">150+</span>
+                <span class = "advertisement-dwn-text">HOTELS</span>
             </div>
 
             <button class = "advertisement-button">Contact Us</button>
@@ -138,30 +138,46 @@
             <div class="destination-container">
                 <article class = "destination">
                     <img class="destination-img" src="./icons/destination1.svg" alt="destination-image">
-                    <p class = "rating">3.4</p>
+                    <div class = "rating">
+                        <span class = "rating-text">3.4</span>
+                        <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+                    </div>
+                    <img class="location-img" src="./icons/location.svg" alt="location-enoj-image">
                     <h4>Kina Mountain</h4>
-                    <p class = "destination-place">Cambodia</p>
+                    <span class = "destination-place">Cambodia</span>
                 </article>
 
                 <article class = "destination">
                     <img class="destination-img" src="./icons/destination2.svg" alt="destination-image">
-                    <p class = "rating">4.5</p>
+                    <div class = "rating">
+                        <span class = "rating-text">4.5</span>
+                        <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+                    </div>
+                    <img class="location-img" src="./icons/location.svg" alt="location-enoj-image">
                     <h4>Lala Mountain</h4>
-                    <p class = "destination-place">Scotland</p>
+                    <span class = "destination-place">Scotland</span>
                 </article>
 
                 <article class = "destination">
                     <img class="destination-img" src="./icons/destination3.svg" alt="destination-image">
-                    <p class = "rating">5</p>
+                    <div class = "rating">
+                        <span class = "rating-text">5</span>
+                        <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+                    </div>
+                    <img class="location-img" src="./icons/location.svg" alt="location-enoj-image">
                     <h4>Black Sea</h4>
-                    <p class = "destination-place">Ukraine</p>
+                    <span class = "destination-place">Ukraine</span>
                 </article>
 
                 <article class = "destination">
                     <img class="destination-img" src="./icons/destination4.svg" alt="destination-image">
-                    <p class = "rating">2</p>
+                    <div class = "rating">
+                        <span class = "rating-text">5</span>
+                        <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+                    </div>
+                    <img class="location-img" src="./icons/location.svg" alt="location-enoj-image">
                     <h4>Mecca</h4>
-                    <p class = "destination-place">Saudi Arabia</p>
+                    <span class = "destination-place">Saudi Arabia</span>
                 </article>
             </div>
         </section>
@@ -171,7 +187,10 @@
                 <p class = "review-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
                 <p class = "user-name">-Vand D</p>
                 <p class = "treloo-type">Happy Treloo</p>
-                <p class = "rating">5</p>
+                <div class = "rating">
+                    <span class = "rating-text">5</span>
+                    <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+                </div>
                 <img class="user-img" src="./icons/user1.svg" alt="user-image">
             </div>
 
@@ -179,7 +198,10 @@
                 <p class = "review-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
                 <p class = "user-name">-Tru Vio</p>
                 <p class = "treloo-type">Happy Treloo</p>
-                <p class = "rating">5</p>
+                <div class = "rating">
+                    <span class = "rating-text">5</span>
+                    <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+                </div>
                 <img class="user-img" src="./icons/user2.svg" alt="user-image">
             </div>
         </section>
@@ -190,14 +212,13 @@
             <button class = "register-btn">Register Today</button>
         </section>
 
-        <footer>
+        <footer class = "footer">
             <p class = "footer-text">© 2022 Treloo LLC - All right reserved.</p>
-            <nav class = "footer-btn">
-                <a class = "header-link" href="#">Review</a>
-                <a class = "header-link" href="#">Tips</a>
-                <a class = "header-link" href="#">Alerts</a>
-                <a class = "header-link" href="#">Blog</a>
-                <a class = "header-link" href="#">Login</a>
+            <nav class = "footer-menu">
+                <a class = "footer-link" href="#">Review</a>
+                <a class = "footer-link" href="#">Tips</a>
+                <a class = "footer-link" href="#">Alerts</a>
+                <a class = "footer-link" href="#">Blog</a>
             </nav>
         </footer>
     </main>

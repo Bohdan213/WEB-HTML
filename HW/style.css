@@ -1,0 +1,57 @@
+.main-header {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+
+    color: #FFFFFF;
+}
+
+.header {
+    background-size: cover !important;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./icons/Mountains.svg);
+}
+
+.header-menu {
+    position: ;
+}
+
+.header-link {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.header-btn {
+
+    position: absolute;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+
+}
+
+.banner {
+
+}
+
+.banner-header {
+
+}
+
+.planning-table {
+
+}
+
+.flight-hotel-btn {
+
+}
+
+.flight-input-place {
+
+}
