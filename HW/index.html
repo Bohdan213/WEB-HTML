@@ -11,52 +11,83 @@
 <body>
 <!--    <img class="background-img" src="./icons/Mountains.svg" alt="Background" />-->
     <header class = "header">
-        <h1 class = "main-header">Treloo</h1>
-        <nav class = "header-menu">
-            <a class = "header-link" href="#">Review</a>
-            <a class = "header-link" href="#">Tips</a>
-            <a class = "header-link" href="#">Alerts</a>
-            <a class = "header-link" href="#">Blog</a>
-            <button class = "header-btn">Blog</button>
-        </nav>
+
+        <div class = "topik">
+            <h1 class = "main-header">Treloo</h1>
+            <nav class = "header-menu">
+                <a class = "header-link" href="#">Review</a>
+                <a class = "header-link" href="#">Tips</a>
+                <a class = "header-link" href="#">Alerts</a>
+                <a class = "header-link" href="#">Blog</a>
+                <button class = "header-btn">Blog</button>
+            </nav>
+        </div>
+
+
+        <section class = "banner">
+                <h2 class = "banner-header">Discover Your Life, Travel<br> Where You Want</h2>
+                <p class = "banner-text">Would you explore natur paradise in the world, let’s find the best<br> destination in world with us.</p>
+        </section>
+
+
     </header>
 
-    <main>
-        <section class = "banner">
-            <div>
-                <h2 class = "banner-header">Discover Your Life, Travel Where You Want
-                    Would you explore natur paradise in the world, let’s find the best destination in world with us.</h2>
-                <p class = "banner-text">Discover Your Life, Travel Where You Want
-                    Would you explore natur paradise in the world, let’s find the best destination in world with us.</p>
-            </div>
-        </section>
+    <main class = "main">
 
         <section class = "planning-table">
 
             <div class = "flight-hotel-btn">
-                <button class = "planning-table-btn">Flight</button>
-                <button class = "planning-table-btn">Hotel</button>
+                <button class = "planning-table-btn">
+                    <img class="flight-hotel-btn-icon" src="./icons/plane.svg" alt="plane">
+                    Flight
+                </button>
+                <button class = "planning-table-btn">
+                    <img class="flight-hotel-btn-icon" src="./icons/hotel.svg" alt="hotel">
+                    Hotel
+                </button>
             </div>
 
-            <div class = "flight-field">
-
-                <form onSubmit = "{() => yourOnSubmitFunc()}">
+                <form class = "flight-field" onSubmit = "{() => yourOnSubmitFunc()}">
                     <div class = "flight-place">
-                        <label for = "place-from" class = "place-from-label">Living from</label>
-                        <input type = "text" class = "flight-input-place" id = "place-from">
-                        <label for = "place-to" class = "place-to-label">Going to</label>
-                        <input type = "text" class = "flight-input-place" id = "place-to">
+                        <div class="flight-place-field">
+                            <label for = "place-from" class = "place-label">Living from</label>
+                            <input type = "text" class = "flight-input-place" id = "place-from" value="Dubai">
+                        </div>
+
+                        <div class = "dotted-box">
+                            <img src="./icons/plane-right-gray.svg" alt="plane">
+                        </div>
+
+                        <div class="flight-place-field">
+                            <label for = "place-to" class = "place-label">Going to</label>
+                            <input type = "text" class = "flight-input-place" id = "place-to" value="New York">
+                        </div>
+
                     </div>
 
-                    <div class = "flight-data">
-                        <label for = "date-leave">Leave</label>
-                        <input type = "date" class = "flight-input-data" id = "date-leave">
-                        <label for = "date-return">Return</label>
-                        <input type = "date" class = "flight-input-data"  id = "date-return">
+                    <div class = "flight-place">
+                        <div class="flight-place-field">
+                            <label for = "date-leave" class = "place-label">Leave
+                                <img class="flight-hotel-icon" src="./icons/plane-right-blue.svg" alt="hotel">
+                            </label>
+                            <input type = "date" class = "flight-input-data" id = "date-leave" value="2023-01-12">
+                        </div>
+
+                        <div class = "dotted-box">
+                            <img src="./icons/calendar.svg" alt="calendar">
+                        </div>
+
+                        <div class="flight-place-field">
+                            <label for = "date-return" class = "place-label">Return
+                                <img class="flight-hotel-icon" src="./icons/plane-left-blue.svg" alt="hotel">
+                            </label>
+                            <input type = "date" class = "flight-input-data"  id = "date-return" value="2023-01-17">
+                        </div>
                     </div>
-                    <button class = "search-btn" onClick = "{() => yourOnSubmitFunc()}">Search</button>
+                    <button class = "search-btn" onClick = "{() => yourOnSubmitFunc()}">
+                        <img src="./icons/search.svg" alt="search">
+                    </button>
                 </form>
-            </div>
 
             <div class = "hotel-field">
 
@@ -65,70 +96,102 @@
         </section>
 
         <section class = "offer">
-            <h3>Special Upcoming Offers</h3>
+            <h1 style="font-size: 3EM;">Special Upcoming Offers</h1>
             <div class = "offer-btn-field">
                 <button class = "offer-btn">Team</button>
                 <button class = "offer-btn">Couple</button>
                 <button class = "offer-btn">Family</button>
             </div>
             <div class="offer-container">
-                <article class = "offer">
-                    <img class="offer-img" src="./icons/offer1.svg" alt="offer-image">
-                    <span class = "offer-type">Relax</span>
-                    <span class = "offer-duration">3 Days, 3 Nights</span>
-                    <span class = "offer-data">14 FEB 2022</span>
-                    <h4>Logo Sea</h4>
-                    <span class = "offer-price">700$/Person</span>
-                    <button class = "offer-btn-book">Book Now</button>
+                <article class = "concrete-offer">
+                        <img class="offer-img" src="./icons/offer1.svg" alt="offer-image">
+                        <div class = "offer-detail">
+                            <span class = "offer-type" style = "background: #FCDDEC;color: #F178B6;">Relax</span>
+                            <span class = "offer-duration">3 Days, 3 Nights</span>
+                        </div>
+                        <h4 style="margin-bottom: 5px; margin-top: 5px; margin-left: 10px;">Logo Sea</h4>
+                        <div class = "offer-bottom">
+                            <div class="offer-price">
+                                <span class = "price">700$</span>
+                                <span style="color: #ACACAC;">/Person</span>
+                            </div>
+                            <button class = "offer-btn-book">Book Now</button>
+                        </div>
+                        <span class = "offer-data">14 FEB 2022</span>
                 </article>
 
-                <article class = "offer">
+
+                <article class = "concrete-offer">
                     <img class="offer-img" src="./icons/offer2.svg" alt="offer-image">
-                    <span class = "offer-type">Adventure</span>
-                    <span class = "offer-duration">4 Days, 3 Nights</span>
+                    <div class = "offer-detail">
+                        <span class = "offer-type" style = "background: #F1F1FD;color: #7879F1;">Adventure</span>
+                        <span class = "offer-duration">4 Days, 3 Nights</span>
+                    </div>
+                    <h4 style="margin-bottom: 5px; margin-top: 5px; margin-left: 10px;">Ansgar Scheffold</h4>
+                    <div class = "offer-bottom">
+                        <div class="offer-price">
+                            <span class = "price">400$</span>
+                            <span style="color: #ACACAC;">/Person</span>
+                        </div>
+                        <button class = "offer-btn-book">Book Now</button>
+                    </div>
                     <span class = "offer-data">18 JUN 2022</span>
-                    <h4>Ansgar Scheffold</h4>
-                    <span class = "offer-price">400$/Person</span>
-                    <button class = "offers-btn-book">Book Now</button>
                 </article>
 
-                <article class = "offer">
+                <article class = "concrete-offer">
                     <img class="offer-img" src="./icons/offer3.svg" alt="offer-image">
-                    <span class = "offer-type">Relax</span>
-                    <span class = "offer-duration">7 Days, 6 Nights</span>
-                    <span class = "offer-data">22 DEC 2022</span>
-                    <h4>Lana X</h4>
-                    <span class = "offer-price">340$/Person</span>
-                    <button class = "offer-btn-book">Book Now</button>
+                    <div class = "offer-detail">
+                        <span class = "offer-type" style = "background: #FCDDEC;color: #F178B6;">Relax</span>
+                        <span class = "offer-duration">7 Days, 6 Nights</span>
+                    </div>
+                    <h4 style="margin-bottom: 5px; margin-top: 5px; margin-left: 10px;">Lana X</h4>
+                    <div class = "offer-bottom">
+                        <div class="offer-price">
+                            <span class = "price">340$</span>
+                            <span style="color: #ACACAC;">/Person</span>
+                        </div>
+                        <button class = "offer-btn-book">Book Now</button>
+                    </div>
+                    <span class = "offer-data">18 JUN 2022</span>
                 </article>
             </div>
         </section>
 
         <section class = "advertisement">
-            <img class="offer-img" src="./icons/advertisement.svg" alt="advertisement-image">
-            <h3>Travel Any Corner of The World With Us</h3>
-            <p class = "advertisement-text">Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you explore nature paradise in the world, let’s find the best destination in world with us. Would you explore nature paradise in the world, let’s find the best destination in world with us.
-                Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
-            <div class = "advertisement-field">
-                <span class = "advertisement-up-text">300+</span>
-                <span class = "advertisement-dwn-text">DESTINATIONS</span>
+            <div class="advertisement-img-fields">
+                <img class="advertisement-img" src="./icons/advertisement.svg" alt="advertisement-image">
+                <div class = "advertisement-fields">
+                    <div class = "advertisement-field-left">
+                        <span class = "advertisement-up-text">300+</span>
+                        <span class = "advertisement-dwn-text">DESTINATIONS</span>
+                    </div>
+
+                    <div class = "advertisement-field-right">
+                        <span class = "advertisement-up-text">5000+</span>
+                        <span class = "advertisement-dwn-text">TOURISTS</span>
+                    </div>
+
+                    <div class = "advertisement-field-left">
+                        <span class = "advertisement-up-text">150+</span>
+                        <span class = "advertisement-dwn-text">HOTELS</span>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class = "advertisement-content">
+                <p class = "advertisement-text-header">Travel Any Corner of<br> The World With Us</p>
+                <p class = "advertisement-text">Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you explore nature paradise in the world, let’s find the best destination in world with us. Would you explore nature paradise in the world, let’s find the best destination in world with us.
+                    <br><br>Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
+
+
+                <button class = "advertisement-button">Contact Us</button>
             </div>
 
-            <div class = "advertisement-field">
-                <span class = "advertisement-up-text">5000+</span>
-                <span class = "advertisement-dwn-text">TOURISTS</span>
-            </div>
-
-            <div class = "advertisement-field">
-                <span class = "advertisement-up-text">150+</span>
-                <span class = "advertisement-dwn-text">HOTELS</span>
-            </div>
-
-            <button class = "advertisement-button">Contact Us</button>
         </section>
 
-        <section class = "destination">
-            <h3>Recommended Destination</h3>
+        <section class = "destination-part">
+            <p class = "destination-header">Recommended Destination</p>
             <div class = "destination-btn-field">
                 <button class = "destination-btn">Popular</button>
                 <button class = "destination-btn">Adventure</button>
@@ -139,76 +202,101 @@
                 <article class = "destination">
                     <img class="destination-img" src="./icons/destination1.svg" alt="destination-image">
                     <div class = "rating">
-                        <span class = "rating-text">3.4</span>
                         <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+                        <span class = "rating-text">3.4</span>
                     </div>
-                    <img class="location-img" src="./icons/location.svg" alt="location-enoj-image">
-                    <h4>Kina Mountain</h4>
-                    <span class = "destination-place">Cambodia</span>
+                    <h4 class="location-place">Kina Mountain</h4>
+                    <div class = "location" >
+                        <img class="location-img" src="./icons/location.svg" alt="location-enoj-image">
+                        <span class = "destination-place">Cambodia</span>
+                    </div>
                 </article>
 
                 <article class = "destination">
                     <img class="destination-img" src="./icons/destination2.svg" alt="destination-image">
                     <div class = "rating">
-                        <span class = "rating-text">4.5</span>
                         <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+                        <span class = "rating-text">4.5</span>
                     </div>
-                    <img class="location-img" src="./icons/location.svg" alt="location-enoj-image">
-                    <h4>Lala Mountain</h4>
-                    <span class = "destination-place">Scotland</span>
+                    <h4 class="location-place">Lala Mountain</h4>
+                    <div class = "location" >
+                        <img class="location-img" src="./icons/location.svg" alt="location-enoj-image">
+                        <span class = "destination-place">Scotland</span>
+                    </div>
                 </article>
 
                 <article class = "destination">
                     <img class="destination-img" src="./icons/destination3.svg" alt="destination-image">
                     <div class = "rating">
-                        <span class = "rating-text">5</span>
                         <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+                        <span class = "rating-text">4.5</span>
                     </div>
-                    <img class="location-img" src="./icons/location.svg" alt="location-enoj-image">
-                    <h4>Black Sea</h4>
-                    <span class = "destination-place">Ukraine</span>
+                    <h4 class="location-place">Black Sea</h4>
+                    <div class = "location" >
+                        <img class="location-img" src="./icons/location.svg" alt="location-enoj-image">
+                        <span class = "destination-place">Ukraine</span>
+                    </div>
                 </article>
 
                 <article class = "destination">
                     <img class="destination-img" src="./icons/destination4.svg" alt="destination-image">
                     <div class = "rating">
-                        <span class = "rating-text">5</span>
                         <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+                        <span class = "rating-text">4.5</span>
                     </div>
-                    <img class="location-img" src="./icons/location.svg" alt="location-enoj-image">
-                    <h4>Mecca</h4>
-                    <span class = "destination-place">Saudi Arabia</span>
+                    <h4 class="location-place">Mecca</h4>
+                    <div class = "location" >
+                        <img class="location-img" src="./icons/location.svg" alt="location-enoj-image">
+                        <span class = "destination-place">Saudi Arabia</span>
+                    </div>
                 </article>
             </div>
         </section>
 
         <section class = "reviews">
-            <div class = "review-field">
-                <p class = "review-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
-                <p class = "user-name">-Vand D</p>
-                <p class = "treloo-type">Happy Treloo</p>
-                <div class = "rating">
-                    <span class = "rating-text">5</span>
-                    <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+            <div class = "review-field" style="margin-right: 20px">
+                <div class = "concrete-review">
+                    <h3 class = "review-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</h3>
+                    <p class = "user-name">-Vand D</p>
+                    <p class = "treloo-type">Happy Treloo</p>
                 </div>
-                <img class="user-img" src="./icons/user1.svg" alt="user-image">
+
+                <div class = "image-rating">
+                    <img class="user-img" src="./icons/user1.svg" alt="user-image">
+                    <div class = "rating-review">
+                        <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+                        <span class = "rating-text">4.5</span>
+                    </div>
+                </div>
+
             </div>
 
-            <div class = "review-field">
-                <p class = "review-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
-                <p class = "user-name">-Tru Vio</p>
-                <p class = "treloo-type">Happy Treloo</p>
-                <div class = "rating">
-                    <span class = "rating-text">5</span>
-                    <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+            <div class = "review-field" style="margin-left: 20px">
+                <div class = "concrete-review">
+                    <h3 class = "review-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</h3>
+                    <p class = "user-name">-Tru Vio</p>
+                    <p class = "treloo-type">Happy Treloo</p>
                 </div>
-                <img class="user-img" src="./icons/user2.svg" alt="user-image">
+
+                <div class = "image-rating">
+
+                    <img class="user-img" src="./icons/user2.svg" alt="user-image">
+                    <div class = "rating-review">
+                        <img class="rating-img" src="./icons/star.svg" alt="destination-image">
+                        <span class = "rating-text">4.9</span>
+                    </div>
+                </div>
             </div>
+
         </section>
 
+        <div class = "review-buttons">
+            <button class="review-left"></button>
+            <button class="review-right"></button>
+        </div>
+
         <section class = "discount">
-            <img class="discount-img" src="./icons/discount-image.svg" alt="discount-image">
-            <h3>Don’t Miss The 50% Discount if You register Today</h3>
+            <p class = "discount-text">Don’t Miss The 50% Discount if<br>You register Today</p>
             <button class = "register-btn">Register Today</button>
         </section>
 
