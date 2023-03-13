@@ -404,7 +404,7 @@ body {
     letter-spacing: 0.5em;
 }
 
-.advertisement {
+.contact {
     display: inline-flex;
     position: relative;
     align-items: center;
@@ -412,7 +412,7 @@ body {
     margin: 10%;
 }
 
-.advertisement-fields {
+.contact-fields {
     width: 100%;
 }
 
