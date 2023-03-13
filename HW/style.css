@@ -29,7 +29,7 @@ body {
     color: #FFFFFF;
 }
 
-.header-menu{
+.header-menu {
     display: inline-flex;
     justify-content: flex-end;
     align-items: center;
@@ -37,7 +37,7 @@ body {
     flex-direction: row;
 }
 
-.header-menu *{
+.header-menu * {
     margin: 15%;
 }
 
@@ -160,6 +160,10 @@ body {
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
     border-top-right-radius: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
 }
 
 .flight-place {
@@ -261,7 +265,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.16);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
     margin-top: 50px;
 }
 
@@ -291,6 +295,8 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    align-content: stretch;
 }
 
 .concrete-offer-text {
@@ -303,7 +309,7 @@ body {
     flex-direction: column;
     display: inline-flex;
     position: relative;
-    margin: 0 20px;
+    margin: 10px 20px;
     background: #FFFFFF;
     padding: 2vh;
     border-radius: 45px;
@@ -314,7 +320,7 @@ body {
     position: relative;
 }
 
-.offer-detail *{
+.offer-detail * {
     margin: 10px 5px;
     padding: 4px 8px;
 }
@@ -377,8 +383,12 @@ body {
     display: inline-flex;
     position: relative;
     align-items: center;
-    justify-content: center;
-    margin: 175px 150px;
+    justify-content: space-between;
+    margin: 10%;
+}
+
+.advertisement-fields {
+    width: 100%;
 }
 
 .offer-img {
@@ -389,6 +399,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 40%;
 }
 
 .advertisement-content {
@@ -397,8 +408,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    margin-left: 50px;
-    /*bottom: 50px;*/
+    width: 50%;
 }
 
 .advertisement-text-header {
@@ -422,7 +432,7 @@ body {
     border-radius: 10px;
     width: 200px;
     height: 80px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.16);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
     font-size: 1.5EM;
 }
 
@@ -430,44 +440,36 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 0;
-    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
 }
 
-.advertisement-fields *{
-    margin-bottom: 200px;
+
+.advertisement-field-left,
+.advertisement-field-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 80px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.16);
+    background: #FFFFFF;
+    border-radius: 20px;
 }
 
 .advertisement-field-left {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 80px;
-    left: 400px;
-    box-shadow: 2px 2px rgba(0,0,0,0.05);
-    background: #FFFFFF;
-    border-radius: 20px;
+    align-self: flex-start;
+    transform: translate(-50%);
 }
 
 .advertisement-field-right {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 80px;
-    right: 70px;
-    box-shadow: 2px 2px rgba(0,0,0,0.16);
-    background: #FFFFFF;
-    border-radius: 20px;
+    align-self: flex-end;
+    transform: translate(50%);
 }
 
 .advertisement-up-text {
-    margin-top: 200px;
     margin-bottom: 0;
     color: #3E86F5;
     position: relative;
@@ -480,7 +482,7 @@ body {
 }
 
 .advertisement-img {
-    margin-right: 50px;
+    width: -webkit-fill-available;
 }
 
 .destination-part {
@@ -523,6 +525,8 @@ body {
 .destination-container {
     display: inline-flex;
     position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .destination {
@@ -533,15 +537,15 @@ body {
     padding: 10px 10px 10px 10px;
     background: #FFFFFF;
     border-radius: 25px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.16);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
 }
 
 .rating {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right:7%;
-    top:6%;
+    right: 7%;
+    top: 6%;
     background: #FFFFFF;
     width: 50px;
     padding-left: 10px;
