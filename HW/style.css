@@ -255,6 +255,31 @@ body {
     flex-direction: column;
 }
 
+.offer h1 {
+    font-size: 3EM;
+}
+
+.offer-type {
+    background: #FCDDEC;
+    color: #F178B6;
+}
+
+.offer-type:nth-of-type(2) {
+    background: #F1F1FD;
+    color: #7879F1;
+}
+
+.offer-type h4 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/* Select second child of every offer-price class */
+.offer-price:nth-of-type(2) {
+    color: #ACACAC;
+}
+
 .offer-btn-field {
 
     background: #FFFFFF;
@@ -395,14 +420,14 @@ body {
     margin-right: 50px;
 }
 
-.advertisement-img-fields {
+.contact-img-fields {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 40%;
 }
 
-.advertisement-content {
+.contact-content {
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -411,20 +436,20 @@ body {
     width: 50%;
 }
 
-.advertisement-text-header {
+.contact-text-header {
     font-size: 3EM;
     font-weight: bold;
     line-height: 1.5EM;
     margin-bottom: 0;
 }
 
-.advertisement-text {
+.contact-text {
     font-size: 1.5EM;
     color: rgba(0, 0, 0, 0.5);
     line-height: 2EM;
 }
 
-.advertisement-button {
+.contact-button {
     position: relative;
     background: #3E86F5;
     color: #FFFFFF;
@@ -436,7 +461,7 @@ body {
     font-size: 1.5EM;
 }
 
-.advertisement-fields {
+.contact-fields {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -446,8 +471,8 @@ body {
 }
 
 
-.advertisement-field-left,
-.advertisement-field-right {
+.contact-field-left,
+.contact-field-right {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -459,17 +484,17 @@ body {
     border-radius: 20px;
 }
 
-.advertisement-field-left {
+.contact-field-left {
     align-self: flex-start;
     transform: translate(-50%);
 }
 
-.advertisement-field-right {
+.contact-field-right {
     align-self: flex-end;
     transform: translate(50%);
 }
 
-.advertisement-up-text {
+.contact-up-text {
     margin-bottom: 0;
     color: #3E86F5;
     position: relative;
@@ -477,11 +502,11 @@ body {
     font-size: 1.5EM;
 }
 
-.advertisement-dwn-text {
+.contact-dwn-text {
     position: relative;
 }
 
-.advertisement-img {
+.contact-img {
     width: -webkit-fill-available;
 }
 
@@ -582,6 +607,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-right: 20px
 }
 
 .concrete-review {
