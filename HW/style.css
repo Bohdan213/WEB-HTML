@@ -161,6 +161,7 @@ body {
     border-bottom-right-radius: 35px;
     border-top-right-radius: 35px;
     flex-wrap: wrap;
+    flex-direction: initial;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -558,7 +559,7 @@ body {
     position: relative;
     display: inline-flex;
     flex-direction: column;
-    margin: 0 15px;
+    margin: 10px 15px;
     padding: 10px 10px 10px 10px;
     background: #FFFFFF;
     border-radius: 25px;
@@ -754,8 +755,8 @@ body {
     display: inline-flex;
     justify-content: flex-end;
     align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: initial;
 }
 
 .footer-link {
