@@ -176,6 +176,7 @@ body {
     border-radius: 10px;
     padding: 2vh;
     margin: 3.5vh 1.5vh;
+    flex-grow: 1;
 }
 
 .flight-place-field {
