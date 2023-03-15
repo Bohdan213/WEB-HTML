@@ -265,7 +265,7 @@ body {
     color: #F178B6;
 }
 
-.offer-type:nth-of-type(2) {
+.concrete-offer:nth-of-type(2) .offer-detail .offer-type {
     background: #F1F1FD;
     color: #7879F1;
 }
@@ -349,6 +349,13 @@ body {
 .offer-detail * {
     margin: 10px 5px;
     padding: 4px 8px;
+}
+
+.offer-type-adventure {
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 20px;
+
 }
 
 .offer-type {
